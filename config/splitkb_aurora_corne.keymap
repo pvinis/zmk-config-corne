@@ -10,6 +10,14 @@
 #define KBCTL  4
 
 / {
+        conditional_layers {
+                compatible = "zmk,conditional-layers";
+                tri_layer {
+                        if-layers = <SYSCTL SYMBOL>;
+                        then-layer = <KBCTL>;
+                };
+        };
+
         keymap {
                 compatible = "zmk,keymap";
 
@@ -89,12 +97,11 @@
 };
 
 
+// home row mods
 // game mode
-
 // reset
 // qmk flash --keyboard crkbd/rev1 --keymap pvinis
 // crkbd/rev1/pvinis @ 0.13.17-94-g521b7d-dirty
-// home row mods
 
 // template
 //  ┌──┬──┬──┬──┬──┬──┐      ┌──┬──┬──┬──┬──┬──┐
