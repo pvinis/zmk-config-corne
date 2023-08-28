@@ -1,5 +1,7 @@
 # Pavlos' ZMK Config for Aurora Corne
 
+[![.github/workflows/build.yml](https://github.com/pvinis/zmk-config-corne/actions/workflows/build.yml/badge.svg)](https://github.com/pvinis/zmk-config-corne/actions/workflows/build.yml)
+
 ### Flashing
 
 - Download the latest firmware, by running:
