@@ -26,6 +26,13 @@
             tapping-term-ms = <200>;
             bindings = <&kp LSHFT>, <&caps_word>;
         };
+        shftlang: tap_dance_1 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_1";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp LSHFT>, <&kp F20>;
+        };
         lh_pht: left_positional_hold_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -61,7 +68,7 @@
                         bindings = <
    &lt NUMBER TAB  &kp Q &kp W &kp E  &kp R      &kp T       &kp Y    &kp U      &kp I      &kp O    &kp P     &none
    &mt LCTRL ESC   &kp A &kp S &kp D  &kp F      &kp G       &kp H    &kp J      &kp K      &kp L    &kp SEMI  &kp ENTER
-   &shftcaps       &kp Z &kp X &kp C  &kp V      &kp B       &kp N    &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
+   &shftlang       &kp Z &kp X &kp C  &kp V      &kp B       &kp N    &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
                              &kp LGUI &mo SYMBOL &kp BSPC    &kp SPC  &mo SYSCTL &kp HYPER
                         >;
                 };
